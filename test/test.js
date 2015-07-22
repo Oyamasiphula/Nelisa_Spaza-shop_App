@@ -35,7 +35,30 @@ describe("Nelisa's spaza sales processing", function(){
 						  'Valentine Cards': 14 }
 	var result = saleQuantities.getProductQty(salesData);
 		assert.deepEqual(expected,result);
-    });
+    })
 
-  });
+    it('should find all products Total sales Price from the csv file', function(){
+    	var expected = { 'Milk 1l': 1420,
+						  Imasi: 3125,
+						  Bread: 1560,
+						  'Chakalaka Can': 940,
+						  'Gold Dish Vegetable Curry Can': 774,
+						  'Fanta 500ml': 611,
+						  'Coke 500ml': 1033.5,
+						  'Cream Soda 500ml': 562.5,
+						  'Iwisa Pap 5kg': 1410,
+						  'Top Class Soy Mince': 1176,
+						  'Shampoo 1 litre': 780,
+						  'Soap Bar': 300,
+						  'Bananas - loose': 228,
+						  'Apples - loose': 228,
+						  'Mixed Sweets 5s': 455,
+						  'Heart Chocolates': 700,
+						  'Rose (plastic)': 210,
+						  'Valentine Cards': 56 }
+
+		var result = salesCostsPerProduct.getSaleCostsPerProduct(salesData);
+		assert.deepEqual(expected,result)
+    });
+});
 
