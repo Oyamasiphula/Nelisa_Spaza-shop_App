@@ -1,7 +1,7 @@
 var assert = require("assert");
 
 var csvRead = require('../methods/readCSV');
-//I've just made (file)object to be a global variable therefore to not encounter that error of saying object method 'salesline'(function's parameter)#has no method;
+//I've just made (file)object to be a global variable therefore not to encounter the error that states object method 'salesline'(function's parameter)#has no method;
 var salesData = csvRead.getData('./data/NelisaSalesHistory.csv');
 //require all the functions by refencing their fileName(modules)
 var saleQuantities = require('../methods/productQty');
@@ -37,10 +37,10 @@ describe("Nelisa's spaza sales processing", function(){
 		assert.deepEqual(expected,result);
     })
 
-    it('should find all products Total sales Price from the csv file', function(){
-    	var expected = { 'Milk 1l': 1420,
-						  Imasi: 3125,
-						  Bread: 1560,
+	it('should find all products Total sales Price from the csv file', function(){
+		var expected = {  'Milk 1l': 1420,
+						   Imasi: 3125,
+						   Bread: 1560,
 						  'Chakalaka Can': 940,
 						  'Gold Dish Vegetable Curry Can': 774,
 						  'Fanta 500ml': 611,
