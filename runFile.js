@@ -10,7 +10,7 @@ var prodQty = qtyPerProduct.getProductQty(salesData);
 // console.log(prodQty);
 
 var totalCostPerProducts = salesCosts.getSaleCostsPerProduct(salesData);
-console.log(totalCostPerProducts);
+//console.log(totalCostPerProducts);
 
 var totalSalesPerCategories = salesCostPerCategories.getSalesPerProductsCategory(salesData);
 console.log(totalSalesPerCategories);
