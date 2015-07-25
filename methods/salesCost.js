@@ -1,5 +1,6 @@
 exports.getSaleCostsPerProduct = function(salesLines){
-	   var totalSalesPerProduct = {};
+	var totalSalesPerProduct = {};
+    
 	salesLines.forEach(function(line){
         
         //split each line into fields
